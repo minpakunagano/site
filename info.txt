@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Home | 「ちょうどいい」をデザインする規格住宅</title>
+    <!-- SEO & OGP -->
+    <meta name="description" content="無駄を削ぎ落とし、本当に必要なものだけを残した、新しい暮らしのカタチ。Terra Homeは高性能・高耐久なスマート規格住宅を提供します。">
+    <meta property="og:title" content="Terra Home | 「ちょうどいい」をデザインする規格住宅">
+    <meta property="og:description" content="AIデザインコンシェルジュと共に創る、新しいスタンダードな家づくり。">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Noto Sans JP -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f7f7f7;
+            scroll-behavior: smooth;
+        }
+        .image-shimmer {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800 tracking-tight">Terra Home</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8 text-sm font-medium">
+                    <li><a href="#concept" class="text-gray-600 hover:text-green-600 transition">コンセプト</a></li>
+                    <li><a href="#features" class="text-gray-600 hover:text-green-600 transition">特徴</a></li>
+                    <li><a href="#design-assist" class="text-gray-600 hover:text-green-600 transition">AIアシスト</a></li>
+                    <li><a href="#price" class="text-gray-600 hover:text-green-600 transition">価格</a></li>
+                </ul>
+            </nav>
+            <a href="#cta" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 px-6 rounded-full shadow-lg transition transform hover:-translate-y-0.5">資料請求</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+            <!-- 本番リリース時は正規の画像URLに差し替えてください -->
+            <img src="uploaded:企画.jpg-9cc17f4c-ccc4-4fc6-be37-1d2c57f4461b" alt="Terra Home 外観イメージ" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/35"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl">
+                <p class="text-white text-lg md:text-xl font-medium mb-4 tracking-widest opacity-90">Minimal & Smart Standard Home</p>
+                <h2 class="text-4xl md:text-7xl font-bold text-white leading-tight mb-8 drop-shadow-lg">
+                    「ちょうどいい」をデザインする。<br>
+                    <span class="text-green-400">賢く美しい規格住宅</span>
+                </h2>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#cta" class="bg-white text-green-700 font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:bg-gray-100 transition transform hover:scale-105">無料相談を申し込む</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section id="concept" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <span class="text-green-600 font-bold tracking-widest text-sm uppercase">Concept</span>
+                <h3 class="text-3xl md:text-5xl font-bold text-gray-900 mt-4 mb-8">無駄を削ぎ落とした美学</h3>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto mb-20 leading-relaxed">
+                    Terra Homeは、高性能・高耐久をベースに、自由な暮らしを支えるミニマルな美しさを追求した規格住宅です。
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                    <div class="group">
+                        <div class="text-5xl mb-6 transform group-hover:scale-110 transition duration-300">🏠</div>
+                        <h4 class="text-2xl font-bold mb-4">ムダのない設計</h4>
+                        <p class="text-gray-500 leading-relaxed">空間効率を最大化し、手の届きやすい価格と高いデザイン性を両立しました。</p>
+                    </div>
+                    <div class="group">
+                        <div class="text-5xl mb-6 transform group-hover:scale-110 transition duration-300">💡</div>
+                        <h4 class="text-2xl font-bold mb-4">高性能・高耐久</h4>
+                        <p class="text-gray-500 leading-relaxed">耐震性、断熱性に優れた構造を標準搭載。安心と快適を提供します。</p>
+                    </div>
+                    <div class="group">
+                        <div class="text-5xl mb-6 transform group-hover:scale-110 transition duration-300">🌱</div>
+                        <h4 class="text-2xl font-bold mb-4">持続可能な暮らし</h4>
+                        <p class="text-gray-500 leading-relaxed">エネルギー効率を追求した、未来を見据えたサステナブルな家づくりです。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (Interior Image) -->
+        <section id="features" class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div class="order-2 lg:order-1 relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-green-100 rounded-full -z-10"></div>
+                        <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
+                            <!-- 本番リリース時は正規の画像URLに差し替えてください -->
+                            <img src="uploaded:designPreview.png" alt="Terra Home 内装" class="w-full h-auto">
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 space-y-8">
+                        <span class="text-green-600 font-bold text-sm tracking-widest uppercase">Interior</span>
+                        <h3 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">光と風を計算した、<br>五感に響く空間。</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Terra Homeの内装は、単なる「部屋」の集合体ではありません。住む人の動線を計算し尽くし、厳選された天然素材の質感が日常に彩りを与えます。
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <span class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">✓</span>
+                                <span class="text-gray-800 font-medium">厳選された天然素材のテクスチャ</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="flex-shrink-0 w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">✓</span>
+                                <span class="text-gray-800 font-medium">ライフスタイルに寄り添う可変間取り</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Design Concierge -->
+        <section id="design-assist" class="py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <span class="text-blue-600 font-bold text-sm tracking-widest uppercase">AI Integration</span>
+                    <h3 class="text-4xl font-bold text-gray-900 mt-4 mb-4">✨ AIデザインコンシェルジュ</h3>
+                    <p class="text-gray-600 text-lg">あなたの感性とAIが響き合う、シミュレーション体験。</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- UI Controls -->
+                    <div class="bg-white p-8 md:p-10 rounded-[2rem] shadow-2xl border border-gray-100">
+                        <h4 class="text-xl font-bold mb-8 flex items-center">
+                            <span class="bg-blue-100 text-blue-600 p-3 rounded-xl mr-4 text-2xl">🎨</span> 設定を変更する
+                        </h4>
+                        <div class="space-y-8">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-3">シミュレートする部屋</label>
+                                <div class="relative">
+                                    <select id="room-select" class="w-full p-4 border-2 border-gray-100 rounded-2xl bg-gray-50 focus:ring-4 focus:ring-blue-100 focus:border-blue-400 outline-none transition appearance-none cursor-pointer">
+                                        <option value="Living Room">リビング</option>
+                                        <option value="Dining & Kitchen">ダイニングキッチン</option>
+                                        <option value="Master Bedroom">主寝室</option>
+                                        <option value="Home Office">書斎</option>
+                                    </select>
+                                    <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">▼</div>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-3">希望のスタイル</label>
+                                <input type="text" id="style-input" value="Japandi Modern" placeholder="例: 北欧モダン, インダストリアル" class="w-full p-4 border-2 border-gray-100 rounded-2xl bg-gray-50 focus:ring-4 focus:ring-blue-100 focus:border-blue-400 outline-none transition">
+                            </div>
+                            <div class="pt-6 space-y-4">
+                                <button id="generate-text-btn" class="w-full bg-gray-900 hover:bg-black text-white font-bold py-4 rounded-2xl transition shadow-lg hover:shadow-2xl">
+                                    📝 コンセプト案を生成
+                                </button>
+                                <button id="generate-image-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-2xl transition shadow-xl hover:shadow-2xl flex items-center justify-center">
+                                    🖼️ ビジュアルを生成する (Imagen 4.0)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Display Results -->
+                    <div class="space-y-8 flex flex-col justify-start">
+                        <!-- Image Result -->
+                        <div class="bg-white p-6 rounded-[2rem] shadow-2xl border border-gray-100 relative min-h-[450px]">
+                            <h5 class="font-bold text-gray-800 mb-6 px-2 flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>
+                                ビジュアルプレビュー
+                            </h5>
+                            <div id="loading-image" class="absolute inset-6 bg-gray-100 rounded-2xl flex flex-col items-center justify-center z-20 hidden">
+                                <div class="image-shimmer absolute inset-0 rounded-2xl"></div>
+                                <div class="relative z-30 text-center">
+                                    <div class="animate-spin h-12 w-12 border-4 border-blue-600 border-t-transparent rounded-full mx-auto mb-6"></div>
+                                    <p class="font-bold text-blue-600 tracking-wider">AIが描いています...</p>
+                                </div>
+                            </div>
+                            <div class="aspect-video w-full overflow-hidden rounded-2xl bg-gray-100 shadow-inner">
+                                <img id="generated-image" src="uploaded:designPreview.png" class="w-full h-full object-cover transition-all duration-700" alt="Interior Preview">
+                            </div>
+                            <!-- Text Result Inside Image Container for a compact look -->
+                            <div id="text-result-container" class="mt-6 p-6 bg-gray-50 rounded-2xl hidden relative">
+                                <div id="loading-text" class="absolute inset-0 bg-gray-50/80 z-10 flex items-center justify-center hidden">
+                                    <div class="animate-spin h-6 w-6 border-2 border-blue-600 border-t-transparent rounded-full"></div>
+                                </div>
+                                <div id="result-content" class="text-gray-700 leading-relaxed text-sm"></div>
+                            </div>
+                            <p id="image-error" class="text-red-500 text-xs mt-4 px-2 hidden"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plan -->
+        <section id="price" class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h3 class="text-4xl font-bold mb-16">シンプルで透明な価格体系</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-white border-2 border-gray-100 rounded-[2.5rem] p-12 transition transform hover:-translate-y-2 hover:shadow-2xl">
+                        <span class="bg-green-100 text-green-700 text-xs font-bold px-4 py-1.5 rounded-full mb-6 inline-block uppercase tracking-widest">Recommended</span>
+                        <h4 class="text-2xl font-bold mb-4">Standard Plan B</h4>
+                        <div class="flex items-end justify-center mb-6">
+                            <span class="text-5xl font-black text-green-600">2,850</span>
+                            <span class="text-xl font-bold text-gray-500 ml-1 mb-1">万円〜</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-10 leading-relaxed">家族3〜4人に最適な3LDK。<br>高気密・高断熱性能が標準装備。</p>
+                        <a href="#cta" class="block w-full py-4 bg-green-600 text-white font-bold rounded-2xl hover:bg-green-700 transition shadow-lg">詳細プランをダウンロード</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="py-24 bg-green-800 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-green-700 rounded-full translate-x-32 -translate-y-32 opacity-20"></div>
+            <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+                <h3 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">「ちょうどいい」暮らしを、<br>ここから始めましょう。</h3>
+                <p class="text-green-100 text-xl mb-12 opacity-90">家づくりに関するどんな小さな悩みでも、<br class="hidden sm:block">まずは専門スタッフにご相談ください。</p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <button class="bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold py-5 px-14 rounded-2xl text-xl shadow-2xl transition transform hover:scale-105 active:scale-95">
+                        資料を無料でダウンロード
+                    </button>
+                    <button class="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 font-bold py-5 px-14 rounded-2xl text-xl backdrop-blur-sm transition">
+                        来店予約
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 text-gray-500 py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-center md:text-left mb-12">
+                <div>
+                    <p class="mb-2 font-bold text-white text-2xl tracking-tight">Terra Home</p>
+                    <p class="text-sm">Architectural Design & Innovation</p>
+                </div>
+                <div class="flex justify-center md:justify-end space-x-6 text-sm">
+                    <a href="#" class="hover:text-white transition">プライバシーポリシー</a>
+                    <a href="#" class="hover:text-white transition">利用規約</a>
+                    <a href="#" class="hover:text-white transition">会社概要</a>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 text-center text-xs opacity-50">
+                <p>© 2025 Terra Home Architectural Design. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Logic Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const apiKey = ""; // IMPORTANT: Set your API Key here for production
+            const roomSelect = document.getElementById('room-select');
+            const styleInput = document.getElementById('style-input');
+
+            const textBtn = document.getElementById('generate-text-btn');
+            const textContainer = document.getElementById('text-result-container');
+            const resultContent = document.getElementById('result-content');
+            const loadingText = document.getElementById('loading-text');
+
+            const imageBtn = document.getElementById('generate-image-btn');
+            const loadingImage = document.getElementById('loading-image');
+            const generatedImg = document.getElementById('generated-image');
+            const imageError = document.getElementById('image-error');
+
+            const fetchWithRetry = async (url, options, retries = 5) => {
+                for (let i = 0; i < retries; i++) {
+                    const response = await fetch(url, options);
+                    if (response.ok) return response;
+                    if (response.status === 429) {
+                        await new Promise(r => setTimeout(r, Math.pow(2, i) * 1000));
+                        continue;
+                    }
+                    throw new Error(`API Error: ${response.status}`);
+                }
+                throw new Error('API request failed after retries.');
+            };
+
+            // Text Generation (Gemini 2.5 Flash)
+            textBtn.addEventListener('click', async () => {
+                const room = roomSelect.value;
+                const style = styleInput.value;
+                
+                textContainer.classList.remove('hidden');
+                loadingText.classList.remove('hidden');
+                resultContent.innerHTML = "";
+
+                const prompt = `あなたは一流のインテリアデザイナーです。「${room}」を「${style}」スタイルでコーディネートする場合の具体的なポイントを3つ、魅力的な日本語で提案してください。`;
+
+                try {
+                    const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            contents: [{ parts: [{ text: prompt }] }],
+                            systemInstruction: { parts: [{ text: "プロフェッショナルで親しみやすい口調で回答してください。HTMLタグ(ul, li)などは使わず、プレーンテキストまたは改行で構造化してください。" }] }
+                        })
+                    });
+                    const data = await res.json();
+                    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "提案を取得できませんでした。";
+                    resultContent.innerHTML = `<strong>✨ AIのアドバイス:</strong><br>${text.replace(/\n/g, '<br>')}`;
+                } catch (e) {
+                    resultContent.innerHTML = "申し訳ありません。現在混み合っています。後ほど再度お試しください。";
+                } finally {
+                    loadingText.classList.add('hidden');
+                }
+            });
+
+            // Image Generation (Imagen 4.0)
+            imageBtn.addEventListener('click', async () => {
+                const room = roomSelect.value;
+                const style = styleInput.value;
+
+                loadingImage.classList.remove('hidden');
+                generatedImg.classList.add('opacity-30', 'scale-95');
+                imageError.classList.add('hidden');
+
+                const promptText = `Modern luxury interior architectural photography of a ${room} in ${style} style. Natural sunlight coming through large windows, high-quality material finishes, elegant and minimalist, realistic, 8k resolution.`;
+
+                try {
+                    const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            instances: [{ prompt: promptText }],
+                            parameters: { sampleCount: 1 }
+                        })
+                    });
+                    const data = await res.json();
+                    if (data.predictions?.[0]?.bytesBase64Encoded) {
+                        generatedImg.src = `data:image/png;base64,${data.predictions[0].bytesBase64Encoded}`;
+                        generatedImg.classList.remove('opacity-30', 'scale-95');
+                    } else {
+                        throw new Error('No image data');
+                    }
+                } catch (e) {
+                    imageError.textContent = "現在画像を生成できません。別のスタイルでお試しいただくか、時間をおいてください。";
+                    imageError.classList.remove('hidden');
+                    generatedImg.classList.remove('opacity-30', 'scale-95');
+                } finally {
+                    loadingImage.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
